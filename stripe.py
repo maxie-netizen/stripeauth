@@ -474,7 +474,7 @@ def handle_buttons(message):
 def background_reset():
     while True:
         reset_daily_checks()
-        time.sleep(3600)  Check every hour
+        time.sleep(3600)  #Check every hour
 
 # Start background thread
 reset_thread = threading.Thread(target=background_reset, daemon=True)
